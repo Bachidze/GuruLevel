@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import data from "../data.json";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Navbar() {
   const [show, setShow] = useState(false);
@@ -17,15 +18,15 @@ export default function Navbar() {
   return (
     <>
       <header className="bg-[#191919] w-[100%]">
-        <section className=" text-white flex items-center justify-between w-[90%] m-auto pt-8 pb-4 rounded-xl">
+        <section className=" text-white flex items-center justify-between w-[90%] m-auto pt-8 pb-8 rounded-xl">
           <div>
-            <img onClick={handleShow} src={show ? X : BurgeMenu} alt="Menu" />
+            <Image onClick={handleShow} alt="brgr" src={show ? X : BurgeMenu} width={18} height={3}/>
           </div>
           <div>
-            <Link href={"/"}><img src="/audiophile.svg" alt="title" /></Link>
+            <Link href={"/"}><Image alt="tittle" src={"/audiophile.svg"} width={143} height={25} /></Link>
           </div>
           <div>
-            <img src={AddProductIcon} alt="prdouct" />
+            <Image alt="product"  src={AddProductIcon} width={22} height={6}/>
           </div>
         </section>
         <section className="flex bg-white  justify-center items-center">
@@ -46,54 +47,42 @@ export default function Navbar() {
             className="flex flex-col absolute bottom-20 text-white  pt-20  bg-white gap-24 text-center rounded-xl pb-7">
               <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
                 <div className="relative flex justify-center bottom-14">
-                  <img
-                    className="w-[79px] h-[104px]"
-                    src="/HeadPhoneHeader.svg"
-                    alt="HeadPhone"
-                  />
+                <Image alt="imgage" src={'/HeadPhoneHeader.svg'} width={79} height={104}/>
                 </div>
                 <div className="pb-[7px] relative bottom-4 text-[#000000]">
                   <Link href={"/headphones"} className="text-[15px] font-bold leading-5 tracking-widest">HEADPHONES</Link>
                 </div>
                 <div className="flex justify-center relative bottom-4 gap-2 text-[#000000]">
                   <Link href={"/headphones"} className="opacity-50 text-[13px] tracking-widest font-bold leading-[17px]">SHOP</Link>
-                  <img src="/OrangeImg.svg" alt="Arrow" />
+                  <Image alt="Arrow" src={"/OrangeImg.svg"} width={6.5} height={10} />
                 </div>
               </div>
 
 
               <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
                 <div className="relative flex justify-center bottom-14">
-                  <img
-                    className="w-[79px] h-[104px]"
-                    src="/SpeakerHeader.svg"
-                    alt="HeadPhone"
-                  />
+                <Image alt="imgage" src={'/SpeakerHeader.svg'} width={79} height={104}/>
                 </div>
                 <div className="pb-[7px] relative bottom-4 text-[#000000]">
                   <Link href={"/speakers"} className="text-[15px] font-bold leading-5 tracking-widest">SPEAKERS</Link>
                 </div>
                 <div className="flex justify-center relative bottom-4 gap-2 text-[#000000]">
                   <Link href={"/headphones"} className="opacity-50 text-[13px] tracking-widest font-bold leading-[17px]">SHOP</Link>
-                  <img src="/OrangeImg.svg" alt="Arrow" />
+                  <Image alt="Arrow" src={"/OrangeImg.svg"} width={6.5} height={10} />
                 </div>
               </div>
 
 
               <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
                 <div className="relative flex justify-center bottom-12">
-                  <img
-                    className="w-[79px] h-[104px]"
-                    src="/earPhoneHeader.svg"
-                    alt="HeadPhone"
-                  />
+                <Image alt="image" src={"/earPhoneHeader.svg"} width={79} height={104} />
                 </div>
                 <div className="pb-[7px] relative bottom-5 text-[#000000]">
                   <Link href={"/earphones"} className="text-[15px] font-bold leading-5 tracking-widest">EARPHONES</Link>
                 </div>
                 <div className="flex justify-center relative bottom-4 gap-2 text-[#000000]">
                   <Link href={"/headphones"} className="opacity-50 text-[13px] tracking-widest font-bold leading-[17px]">SHOP</Link>
-                  <img src="/OrangeImg.svg" alt="Arrow" />
+                  <Image alt="Arrow" src={"/OrangeImg.svg"} width={6.5} height={10} />
                 </div>
               </div>
 

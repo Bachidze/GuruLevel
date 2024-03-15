@@ -1,6 +1,7 @@
 import React from "react";
 import data from "../../../data.json";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function headphone() {
   return (
@@ -14,11 +15,7 @@ export default function headphone() {
       </section>
       <section className="pl-6 pr-6 mt-16">
         <div>
-          <img
-            className="rounded-xl"
-            src={data[3].categoryImage.mobile}
-            alt="img"
-          />
+          <Image className="rounded-xl" alt="headphone" src={data[3].categoryImage.mobile} width={327} height={353} />
         </div>
 
         <div className="mt-8">
@@ -46,11 +43,7 @@ export default function headphone() {
         </div>
 
         <div className="mt-[120px]">
-          <img
-            className="rounded-xl"
-            src={data[2].categoryImage.mobile}
-            alt="img"
-          />
+          <Image className="rounded-xl" alt="headphone" src={data[2].categoryImage.mobile} width={327} height={353} />
         </div>
 
         <div className="mt-8">
@@ -79,11 +72,7 @@ export default function headphone() {
         </div>
 
         <div className="mt-[120px]">
-          <img
-            className="rounded-xl"
-            src={data[1].categoryImage.mobile}
-            alt="img"
-          />
+        <Image className="rounded-xl" alt="headphone" src={data[1].categoryImage.mobile} width={327} height={353} />
         </div>
 
         <div className="mt-8">
@@ -113,11 +102,7 @@ export default function headphone() {
       <section className="flex flex-col gap-20 mt-24 text-center -z-20">
           <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
             <div className="relative flex justify-center bottom-14">
-              <img
-                className="w-[79px] h-[104px]"
-                src="/HeadPhoneHeader.svg"
-                alt="HeadPhone"
-              />
+            <Image alt="imgage" src={'/HeadPhoneHeader.svg'} width={79} height={104}/>
             </div>
             <div className="pb-[7px] relative bottom-4 text-[#000000]">
               <Link
@@ -134,17 +119,13 @@ export default function headphone() {
               >
                 SHOP
               </Link>
-              <img src="/OrangeImg.svg" alt="Arrow" />
+              <Image alt="Arrow" src={"/OrangeImg.svg"} width={6.5} height={10} />
             </div>
           </div>
 
           <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
             <div className="relative flex justify-center bottom-14">
-              <img
-                className="w-[79px] h-[104px]"
-                src="/SpeakerHeader.svg"
-                alt="HeadPhone"
-              />
+            <Image alt="image" src={"/SpeakerHeader.svg"} width={79} height={104} />
             </div>
             <div className="pb-[7px] relative bottom-4 text-[#000000]">
               <Link
@@ -161,17 +142,13 @@ export default function headphone() {
               >
                 SHOP
               </Link>
-              <img src="/OrangeImg.svg" alt="Arrow" />
+              <Image alt="Arrow" src={"/OrangeImg.svg"} width={6.5} height={10} />
             </div>
           </div>
 
           <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
             <div className="relative flex justify-center bottom-12">
-              <img
-                className="w-[79px] h-[104px]"
-                src="/earPhoneHeader.svg"
-                alt="HeadPhone"
-              />
+            <Image alt="image" src={"/earPhoneHeader.svg"} width={79} height={104} />
             </div>
             <div className="pb-[7px] relative bottom-5 text-[#000000]">
               <Link
@@ -188,12 +165,12 @@ export default function headphone() {
               >
                 SHOP
               </Link>
-              <img src="/OrangeImg.svg" alt="Arrow" />
+              <Image alt="Arrow" src={"/OrangeImg.svg"} width={6.5} height={10} />
             </div>
           </div>
         </section>
         <section className="flex justify-center items-center flex-col mt-[120px]">
-          <img className="w-[327px] h-[200px] rounded-xl" src={data[3].gallery.first.mobile} alt="" />
+          <Image className="rounded-xl" alt="men" src={data[3].gallery.first.mobile} width={327} height={200} />
           <div className="text-center mt-10">
             <h1 className="text-[34px] leading-[38.25px] font-bold tracking-[1px] pb-8">Bringing you the <span className="text-[#D87D4A]">best</span> audio gear</h1>
             <p className="text-[15px] leading-[25px] font-normal w-[80%] m-auto opacity-65">
