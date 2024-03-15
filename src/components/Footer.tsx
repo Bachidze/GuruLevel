@@ -22,9 +22,9 @@ export default function Footer() {
             <div className="flex justify-center pb-[48px]">
               <p className="w-[80%] text-[15px] leading-[25px] font-normal opacity-50">
                 Audiophile is an all in one stop to fulfill your audio needs.
-                We're a small team of music lovers and sound specialists who are
+                We&apos;re a small team of music lovers and sound specialists who are
                 devoted to helping you get the most out of personal audio. Come
-                and visit our demo facility - we &apos; re open 7 days a week.
+                and visit our demo facility - we&apos;re open 7 days a week.
               </p>
             </div>
             <div>
