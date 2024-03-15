@@ -1,7 +1,11 @@
 import React from 'react'
-
-export default function EarPhone() {
+interface Params {
+  params:{
+    id:string
+  }
+}
+export default function EarPhone({params}:Params) {
   return (
-    <div>EarPhone</div>
+    <div>{params.id}</div>
   )
 }
