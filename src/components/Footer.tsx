@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -8,7 +9,7 @@ export default function Footer() {
         <section className="text-white flex flex-col justify-center items-center text-center gap-[48px]">
           <div>
             <div className="flex justify-center">
-              <img src="/audiophile.svg" alt="Audiophile" />
+            <Link href={"/"}><Image alt="tittle" src={"/audiophile.svg"} width={143} height={25} /></Link>
             </div>
             <div className="flex flex-col gap-4 pt-[48px] text-[13px] font-bold leading-[25px]">
               <Link href={"/"}>HOME</Link>
@@ -23,7 +24,7 @@ export default function Footer() {
                 Audiophile is an all in one stop to fulfill your audio needs.
                 We're a small team of music lovers and sound specialists who are
                 devoted to helping you get the most out of personal audio. Come
-                and visit our demo facility - we’re open 7 days a week.
+                and visit our demo facility - we&apos;re open 7 days a week.
               </p>
             </div>
             <div>
@@ -31,9 +32,9 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex gap-4">
-            <img src="/faceee.svg" alt="facebook" />
-            <img src="/twitte.svg" alt="twitter" />
-            <img src="/iinsta.svg" alt="instagram" />
+            <Image alt='facebook' src={"/faceee.svg"} width={24} height={24} />
+            <Image alt='facebook' src={"/twitte.svg"} width={24} height={24} />
+            <Image alt='facebook' src={"/iinsta.svg"} width={24} height={24} />
           </div>
         </section>
       </footer>

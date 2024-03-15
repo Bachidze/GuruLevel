@@ -13,7 +13,7 @@ export default function headphone() {
           </h1>
         </div>
       </section>
-      <section className="pl-6 pr-6 mt-16">
+      <section className="pl-6 pr-6 mt-16 flex flex-col justify-center items-center">
         <div>
           <Image className="rounded-xl" alt="headphone" src={data[3].categoryImage.mobile} width={327} height={353} />
         </div>
