@@ -10,7 +10,7 @@ export default function MainPage() {
         <section className="relative -z-10">
           <div className=" text-white ">
             <div>
-              <Image alt="img" src={'/MainMainimg.svg'} width={375} height={600}></Image>
+              <Image alt="photo" src={"/MainMainimg.svg"} width={375} height={600}></Image>
             </div>
             <div className="absolute top-48 flex justify-center flex-col items-center">
               <h1 className="text-[14px] leading-5 tracking-[10px] text-center font-normal pb-4 opacity-50">
@@ -37,7 +37,7 @@ export default function MainPage() {
         <section className="flex flex-col gap-20 mt-24 text-center -z-20">
           <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
             <div className="relative flex justify-center bottom-14">
-              <Image alt="img" src={'/HeadPhoneHeader.svg'} width={79} height={104}/>
+              <Image alt="photo" src={"/HeadPhoneHeader.svg"} width={79} height={104}/>
             </div>
             <div className="pb-[7px] relative bottom-4 text-[#000000]">
               <Link

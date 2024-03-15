@@ -102,7 +102,7 @@ export default function headphone() {
       <section className="flex flex-col gap-20 mt-24 text-center -z-20">
           <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
             <div className="relative flex justify-center bottom-14">
-            <Image alt="imgage" src={'/HeadPhoneHeader.svg'} width={79} height={104}/>
+            <Image alt="photo" src={"/HeadPhoneHeader.svg"} width={79} height={104}/>
             </div>
             <div className="pb-[7px] relative bottom-4 text-[#000000]">
               <Link
