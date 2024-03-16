@@ -158,7 +158,7 @@ export default function Navbar() {
                 {show ? <section className="w-[375px] m-auto absolute opacity-40 z-50 -left-6">
                        <motion.div
                         animate={{
-                         y: show ? 190 : "-200%",
+                         y: show ? 390 : "-200%",
                        }}
                        transition={{
                          duration: 1,
@@ -166,7 +166,7 @@ export default function Navbar() {
                        }}
                        initial={{ opacity: 0, y: "-200%" }}
                        whileInView={{ opacity: 1 }}
-                       className="bg-black z-50 h-[380vh] flex justify-start sm:h-[365vh] md:h-[358vh]">
+                       className="bg-black z-50 h-[545vh] flex justify-start sm:h-[480vh] ">
                        </motion.div>
                  </section>: null}
                 </div>
