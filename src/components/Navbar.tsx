@@ -166,7 +166,7 @@ export default function Navbar() {
                        }}
                        initial={{ opacity: 0, y: "-200%" }}
                        whileInView={{ opacity: 1 }}
-                       className="bg-black z-50 h-[545vh] flex justify-start sm:h-[480vh] ">
+                       className="bg-black z-50 h-[475vh] flex justify-start sm:h-[480vh] ">
                        </motion.div>
                  </section>: null}
                 </div>
