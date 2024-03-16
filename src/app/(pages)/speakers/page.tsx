@@ -181,7 +181,7 @@ export default function Speakers() {
             Bringing you the <span className="text-[#D87D4A]">best</span> audio
             gear
           </h1>
-          <p className="text-[15px] leading-[25px] font-normal w-[80%] m-auto opacity-65">
+          <p className="text-[15px] leading-[25px] font-normal w-[80%] m-auto opacity-65 -z-10">
             Located at the heart of New York City, Audiophile is the premier
             store for high end headphones, earphones, speakers, and audio
             accessories. We have a large showroom and luxury demonstration rooms

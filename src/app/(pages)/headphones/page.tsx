@@ -18,7 +18,7 @@ export default function headphone() {
           <Image className="rounded-xl" alt="headphone" src={data[3].categoryImage.mobile} width={327} height={353} />
         </div>
 
-        <div className="mt-8">
+        <div className="mt-8 -z-10">
           <div className=" flex justify-center flex-col items-center">
             <h1 className="text-[14px] leading-[19px] tracking-[10px] text-center font-normal pb-4 opacity-50 text-[#D87D4A]">
               NEW PRODUCT
@@ -26,7 +26,7 @@ export default function headphone() {
             <h1 className="text-[28px] leading-[38.25px] font-bold tracking-[1px] text-center pb-6">
               {data[3].name}
             </h1>
-            <p className="text-[15px] text-center leading-[25px] font-normal opacity-50 w-[99%] pb-7">
+            <p className="text-[15px] text-center leading-[25px] font-normal opacity-50 w-[99%] pb-7 -z-10">
               The new XX99 Mark II headphones is the pinnacle of pristine audio.
               It redefines your premium headphone experience by reproducing the
               balanced depth and precision of studio-quality sound.

@@ -24,7 +24,7 @@ export default function EarPhone() {
             />
           </div>
 
-          <div className="mt-8 mb-[120px]">
+          <div className="mt-8 mb-[120px] -z-10">
             <div className=" flex justify-center flex-col items-center">
               <h1 className="text-[14px] leading-[19px] tracking-[10px] text-center font-normal pb-4 opacity-50 text-[#D87D4A]">
                 NEW PRODUCT
