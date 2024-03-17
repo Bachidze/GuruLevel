@@ -42,7 +42,7 @@ export default function Navbar() {
             <Image alt="product" src={AddProductIcon} width={22} height={6} />
           </div>
         </section>
-        <section className="flex bg-white  justify-center items-center  m-auto">
+        <section className="flex bg-white   justify-center items-center  m-auto z-50">
           {show ? (
           
               <motion.div
@@ -56,7 +56,7 @@ export default function Navbar() {
                 }}
                 initial={{ opacity: 0, y: "-200%" }}
                 whileInView={{ opacity: 1 }}
-                className="flex flex-col justify-center items-center absolute bottom-20 text-white pt-20 bg-white gap-24 text-center rounded-xl pb-7 w-full"
+                className="flex flex-col justify-center items-center absolute bottom-20 text-white pt-20 bg-white gap-24 text-center rounded-xl pb-7 w-full z-[99999]"
               >
                 <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
                   <div className="relative flex justify-center bottom-14">
@@ -77,7 +77,7 @@ export default function Navbar() {
                   </div>
                   <div className="flex justify-center relative bottom-4 gap-2 text-[#000000]">
                     <Link
-                      href={"/headphones"}
+                      href={"/producthead"}
                       className="opacity-50 text-[13px] tracking-widest font-bold leading-[17px]"
                     >
                       SHOP
@@ -133,7 +133,7 @@ export default function Navbar() {
                       height={104}
                     />
                   </div>
-                  <div className="pb-[7px] relative bottom-5 text-[#000000]">
+                  <div className="pb-[7px] relative bottom-5 text-[#000000] ">
                     <Link
                       href={"/earphones"}
                       className="text-[15px] font-bold leading-5 tracking-widest"
@@ -143,7 +143,7 @@ export default function Navbar() {
                   </div>
                   <div className="flex justify-center relative bottom-4 gap-2 text-[#000000]">
                     <Link
-                      href={"/headphones"}
+                      href={"/earphones"}
                       className="opacity-50 text-[13px] tracking-widest font-bold leading-[17px]"
                     >
                       SHOP
@@ -155,7 +155,7 @@ export default function Navbar() {
                       height={10}
                     />
                   </div>
-                {show ? <section className="w-[375px] m-auto absolute opacity-40 z-50 -left-6">
+           {/*      {show ? <section className="w-[375px] m-auto absolute opacity-40 z-50 -left-6">
                        <motion.div
                         animate={{
                          y: show ? 390 : "-200%",
@@ -168,7 +168,7 @@ export default function Navbar() {
                        whileInView={{ opacity: 1 }}
                        className="bg-black z-50 h-[475vh] flex justify-start sm:h-[480vh] ">
                        </motion.div>
-                 </section>: null}
+                 </section>: null} */}
                 </div>
               </motion.div>
           ) : null}

@@ -24,7 +24,7 @@ export default function EarPhone() {
             />
           </div>
 
-          <div className="mt-8 mb-[120px] -z-10">
+          <div className="mt-8 mb-[120px]">
             <div className=" flex justify-center flex-col items-center">
               <h1 className="text-[14px] leading-[19px] tracking-[10px] text-center font-normal pb-4 opacity-50 text-[#D87D4A]">
                 NEW PRODUCT
@@ -49,7 +49,7 @@ export default function EarPhone() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col gap-20 mt-24 text-center -z-20">
+        <section className="flex flex-col gap-20 mt-24 text-center">
           <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
             <div className="relative flex justify-center bottom-14">
               <Image

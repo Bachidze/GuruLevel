@@ -7,7 +7,7 @@ export default function MainPage() {
   return (
     <>
       <main className="flex justify-center flex-col items-center">
-        <section className="relative -z-10">
+        <section className="relative">
           <div className=" text-white ">
             <div>
               <Image alt="photo" src={"/MainMainimg.svg"} width={375} height={600}></Image>
@@ -25,7 +25,7 @@ export default function MainPage() {
               </p>
               <div className="bg-[#D87D4A]  tracking-[2px] w-[160px] flex items-center justify-center pt-[15px] pb-[15px] cursor-pointer">
                 <Link
-                  href={""}
+                  href={"/headphones"}
                   className="text-[13px] leading-[17.76px] font-bold tracking-[1px]"
                 >
                   SEE PRODUCT
@@ -34,7 +34,7 @@ export default function MainPage() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col gap-20 mt-24 text-center -z-20">
+        <section className="flex flex-col gap-20 mt-24 text-center">
           <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
             <div className="relative flex justify-center bottom-14">
               <Image alt="photo" src={"/HeadPhoneHeader.svg"} width={79} height={104}/>

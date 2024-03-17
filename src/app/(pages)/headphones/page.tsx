@@ -18,7 +18,7 @@ export default function headphone() {
           <Image className="rounded-xl" alt="headphone" src={data[3].categoryImage.mobile} width={327} height={353} />
         </div>
 
-        <div className="mt-8 -z-10">
+        <div className="mt-8 ">
           <div className=" flex justify-center flex-col items-center">
             <h1 className="text-[14px] leading-[19px] tracking-[10px] text-center font-normal pb-4 opacity-50 text-[#D87D4A]">
               NEW PRODUCT
@@ -26,10 +26,8 @@ export default function headphone() {
             <h1 className="text-[28px] leading-[38.25px] font-bold tracking-[1px] text-center pb-6">
               {data[3].name}
             </h1>
-            <p className="text-[15px] text-center leading-[25px] font-normal opacity-50 w-[99%] pb-7 -z-10">
-              The new XX99 Mark II headphones is the pinnacle of pristine audio.
-              It redefines your premium headphone experience by reproducing the
-              balanced depth and precision of studio-quality sound.
+            <p className="text-[15px] text-center leading-[25px] font-normal opacity-50 w-[99%] pb-7 ">
+              {data[3].description}
             </p>
             <div className="bg-[#D87D4A]  tracking-[2px] w-[160px] flex items-center justify-center pt-[15px] pb-[15px] cursor-pointer">
               <Link
@@ -55,14 +53,11 @@ export default function headphone() {
               {data[2].name}
             </h1>
             <p className="text-[15px] text-center leading-[25px] font-normal opacity-50 w-[99%] pb-7">
-              As the gold standard for headphones, the classic XX99 Mark I
-              offers detailed and accurate audio reproduction for audiophiles,
-              mixing engineers, and music aficionados alike in studios and on
-              the go.
+              {data[2].description}
             </p>
             <div className="bg-[#D87D4A]  tracking-[2px] w-[160px] flex items-center justify-center pt-[15px] pb-[15px] cursor-pointer">
               <Link
-                href={""}
+                href={"/producthead2"}
                 className="text-[13px] leading-[17.76px] font-bold tracking-[1px] text-white"
               >
                 SEE PRODUCT
@@ -84,13 +79,11 @@ export default function headphone() {
               {data[1].name}
             </h1>
             <p className="text-[15px] text-center leading-[25px] font-normal opacity-50 w-[99%] pb-7">
-              Enjoy your audio almost anywhere and customize it to your specific
-              tastes with the XX59 headphones. The stylish yet durable versatile
-              wireless headset is a brilliant companion at home or on the move.
+              {data[1].description}
             </p>
             <div className="bg-[#D87D4A]  tracking-[2px] w-[160px] flex items-center justify-center pt-[15px] pb-[15px] cursor-pointer mb-[100px]">
               <Link
-                href={""}
+                href={"/producthead3"}
                 className="text-[13px] leading-[17.76px] font-bold tracking-[1px] text-white"
               >
                 SEE PRODUCT
@@ -99,7 +92,7 @@ export default function headphone() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col gap-20 mt-24 text-center -z-20">
+      <section className="flex flex-col gap-20 mt-24 text-center ">
           <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
             <div className="relative flex justify-center bottom-14">
             <Image alt="photo" src={"/HeadPhoneHeader.svg"} width={79} height={104}/>

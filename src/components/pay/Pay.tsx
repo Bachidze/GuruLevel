@@ -7,12 +7,12 @@ export default function Pay() {
   const [pay, setPay] = useState(2999);
 
   const increase = () => {
-    setMultiplier(multiplier * 2);
+    setMultiplier(multiplier + 1); // Increment by 1 instead of doubling
   };
 
   const decrease = () => {
     if (multiplier > 1) {
-      setMultiplier(multiplier / 2);
+      setMultiplier(multiplier - 1); // Decrease by 1
     }
   };
 
@@ -25,16 +25,16 @@ export default function Pay() {
           </h1>
         </div>
         <div className="flex gap-4">
-          <div className="flex items-center gap-[21px] bg-[#F1F1F1] pl-[15.5px] pr-[15.5px]">
+          <div className="flex items-center gap-[21px] bg-[#959393] pl-[15.5px] pr-[15.5px]">
             <h1
-              className="text-[15px] font-bold leading-[18px] opacity-25"
+              className="text-[15px] font-bold leading-[18px] opacity-25 text-[#F1F1F1] cursor-pointer"
               onClick={increase}
             >
               +
             </h1>
             <h1>{multiplier}</h1>
             <h1
-              className="text-[15px] font-bold leading-[18px] opacity-25"
+              className="text-[15px] font-bold leading-[18px] opacity-25 text-[#F1F1F1] cursor-pointer"
               onClick={decrease}
             >
               -
