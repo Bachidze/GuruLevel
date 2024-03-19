@@ -11,7 +11,7 @@ export default function MainPage() {
       <main className="flex justify-center flex-col items-center">
         <section className="relative">
           <div className=" text-white ">
-            <div>
+            <div className="md:hidden">
               <Image
                 alt="photo"
                 src={"/MainMainimg.svg"}
@@ -19,7 +19,16 @@ export default function MainPage() {
                 height={600}
               ></Image>
             </div>
-            <div className="absolute top-48 flex justify-center flex-col items-center">
+            <div className="hidden md:flex">
+              <Image
+                alt="photo"
+                src={"/tabletmainimg.svg"}
+                width={768}
+                height={600}
+              ></Image>
+            </div>
+
+            <div className="absolute  flex justify-center flex-col items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               <motion.h1
                 initial={{ y: "200%" }}
                 whileInView={{
@@ -28,7 +37,7 @@ export default function MainPage() {
                 transition={{
                   duration: 2,
                 }}
-                className="text-[14px] leading-5 tracking-[10px] text-center font-normal pb-4 opacity-50"
+                className="text-[14px] leading-5 tracking-[10px] text-center font-normal pb-4 opacity-50 md:pb-6"
               >
                 NEW PRODUCT
               </motion.h1>
@@ -40,7 +49,7 @@ export default function MainPage() {
                 transition={{
                   duration: 1.7,
                 }}
-                className="text-[36px] leading-10 font-bold tracking-[1.29px] text-center pb-6"
+                className="text-[36px] leading-10 font-bold tracking-[1.29px] text-center pb-6 md:text-[56px] md:leading-[58px] md:w-[396px]"
               >
                 {data[3].name}
               </motion.h1>
@@ -52,7 +61,7 @@ export default function MainPage() {
                 transition={{
                   duration: 1.5,
                 }}
-                className="text-[15px] text-center leading-[25px] font-normal opacity-75 w-[70%] pb-7"
+                className="text-[15px] text-center leading-[25px] font-normal opacity-75 w-[328px] pb-7 md:w-[349px] md:mb-4"
               >
                 Experience natural, lifelike audio and exceptional build quality
                 made for the passionate music enthusiast.
@@ -77,8 +86,8 @@ export default function MainPage() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col gap-20 mt-24 text-center">
-          <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
+        <section className="flex flex-col gap-20 mt-24 text-center md:flex-row  md:gap-4 md:w-[689px]">
+          <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl md:w-[223px] md:h-[165px]">
             <motion.div
               initial={{ y: "100%" }}
               whileInView={{
@@ -114,14 +123,15 @@ export default function MainPage() {
               </Link>
             </motion.div>
             <motion.div
-              initial={{y:'100%'}}
+              initial={{ y: "100%" }}
               whileInView={{
-                y:0
+                y: 0,
               }}
               transition={{
-                duration:1.5
+                duration: 1.5,
               }}
-            className="flex justify-center relative bottom-4 gap-2 text-[#000000]">
+              className="flex justify-center relative bottom-4 gap-2 text-[#000000]"
+            >
               <Link
                 href={"/headphones"}
                 className="opacity-50 text-[13px] tracking-widest font-bold leading-[17px]"
@@ -137,16 +147,17 @@ export default function MainPage() {
             </motion.div>
           </div>
 
-          <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
+          <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl md:w-[223px] md:h-[165px]">
             <motion.div
-              initial={{y:'100%'}}
-               whileInView={{
-                 y:0
-               }}
-               transition={{
-                 duration:1.5
-               }}
-            className="relative flex justify-center bottom-14">
+              initial={{ y: "100%" }}
+              whileInView={{
+                y: 0,
+              }}
+              transition={{
+                duration: 1.5,
+              }}
+              className="relative flex justify-center bottom-14"
+            >
               <Image
                 alt="image"
                 src={"/SpeakerHeader.svg"}
@@ -155,14 +166,15 @@ export default function MainPage() {
               />
             </motion.div>
             <motion.div
-              initial={{y:'100%'}}
-               whileInView={{
-                 y:-10
-               }}
-               transition={{
-                 duration:1.5
-               }}
-            className="pb-[7px] relative bottom-4 text-[#000000]">
+              initial={{ y: "100%" }}
+              whileInView={{
+                y: -10,
+              }}
+              transition={{
+                duration: 1.5,
+              }}
+              className="pb-[7px] relative bottom-4 text-[#000000]"
+            >
               <Link
                 href={"/speakers"}
                 className="text-[15px] font-bold leading-5 tracking-widest"
@@ -171,14 +183,15 @@ export default function MainPage() {
               </Link>
             </motion.div>
             <motion.div
-              initial={{y:'100%'}}
-               whileInView={{
-                 y:0
-               }}
-               transition={{
-                 duration:1.5
-               }}
-            className="flex justify-center relative bottom-4 gap-2 text-[#000000]">
+              initial={{ y: "100%" }}
+              whileInView={{
+                y: 0,
+              }}
+              transition={{
+                duration: 1.5,
+              }}
+              className="flex justify-center relative bottom-4 gap-2 text-[#000000]"
+            >
               <Link
                 href={"/headphones"}
                 className="opacity-50 text-[13px] tracking-widest font-bold leading-[17px]"
@@ -194,15 +207,17 @@ export default function MainPage() {
             </motion.div>
           </div>
 
-          <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
+          <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl md:w-[223px] md:h-[165px]">
             <motion.div
-              initial={{y:'100%'}}
+              initial={{ y: "100%" }}
               whileInView={{
-                y:0
+                y: 0,
               }}
               transition={{
-                duration:1.5
-              }} className="relative flex justify-center bottom-12">
+                duration: 1.5,
+              }}
+              className="relative flex justify-center bottom-12"
+            >
               <Image
                 alt="image"
                 src={"/earPhoneHeader.svg"}
@@ -211,14 +226,15 @@ export default function MainPage() {
               />
             </motion.div>
             <motion.div
-              initial={{y:'100%'}}
+              initial={{ y: "100%" }}
               whileInView={{
-                y:0
+                y: 0,
               }}
               transition={{
-                duration:1.5
+                duration: 1.5,
               }}
-            className="pb-[7px] relative bottom-5 text-[#000000]">
+              className="pb-[7px] relative bottom-5 text-[#000000]"
+            >
               <Link
                 href={"/earphones"}
                 className="text-[15px] font-bold leading-5 tracking-widest"
@@ -227,14 +243,15 @@ export default function MainPage() {
               </Link>
             </motion.div>
             <motion.div
-              initial={{y:'100%'}}
+              initial={{ y: "100%" }}
               whileInView={{
-                y:0
+                y: 0,
               }}
               transition={{
-                duration:1.5
+                duration: 1.5,
               }}
-            className="flex justify-center relative bottom-4 gap-2 text-[#000000]">
+              className="flex justify-center relative bottom-4 gap-2 text-[#000000]"
+            >
               <Link
                 href={"/headphones"}
                 className="opacity-50 text-[13px] tracking-widest font-bold leading-[17px]"
@@ -251,51 +268,54 @@ export default function MainPage() {
           </div>
         </section>
 
-        <section className="bg-[#D87D4A] w-[327px] text-white relative flex justify-center flex-col items-center text-center pt-[55px] pb-[55px] pl-6 pr-6 ml-6 mr-6 rounded-xl mt-32">
+        <section className="bg-[#D87D4A] w-[327px] text-white relative flex justify-center flex-col items-center text-center pt-[55px] pb-[55px] pl-6 pr-6 ml-6 mr-6 rounded-xl mt-32 md:w-[689px] md:h-[720px]">
           <motion.div
-            initial={{x:'50%'}}
+            initial={{ x: "50%" }}
             whileInView={{
-              x:0
+              x: 0,
             }}
             transition={{
-              duration:2
+              duration: 2,
             }}
           >
             <Image alt="image" src={"/dinamic.svg"} width={172} height={207} />
           </motion.div>
           <div className="flex justify-center items-center flex-col pt-8">
             <motion.h1
-              initial={{x:'-50%'}}
+              initial={{ x: "-50%" }}
               whileInView={{
-                x:0
+                x: 0,
               }}
               transition={{
-                duration:1.5
+                duration: 1.5,
               }}
-            className="pb-6 text-[36px]  leading-10 tracking-[1.29px] font-bold">
+              className="pb-6 text-[36px]  leading-10 tracking-[1.29px] font-bold md:text-[56px] md:leading-[58px] md:tracking-[2px] md:w-[261px]"
+            >
               {data[5].name}
             </motion.h1>
             <motion.p
-              initial={{y:'70%'}}
+              initial={{ y: "70%" }}
               whileInView={{
-                y:0
+                y: 0,
               }}
               transition={{
-                duration:1.5
+                duration: 1.5,
               }}
-            className="pb-6 text-[15px] leading-[25px] font-normal opacity-75">
+              className="pb-6 text-[15px] leading-[25px] font-normal opacity-75 md:w-[349px]"
+            >
               Upgrade to premium speakers that are phenomenally built to deliver
               truly remarkable sound.
             </motion.p>
-            <motion.div 
-              initial={{y:'100%'}}
+            <motion.div
+              initial={{ y: "100%" }}
               whileInView={{
-                y:0
+                y: 0,
               }}
               transition={{
-                duration:2.5
+                duration: 2.5,
               }}
-            className="bg-[#000000] tracking-[2px]  w-[170px] flex items-center justify-center pt-[15px] pb-[15px] cursor-pointer">
+              className="bg-[#000000] tracking-[2px]  w-[170px] flex items-center justify-center pt-[15px] pb-[15px] cursor-pointer"
+            >
               <Link
                 href={"/speaker1"}
                 className="text-[13px] leading-[17.76px] font-bold tracking-[1px]"
@@ -304,44 +324,66 @@ export default function MainPage() {
               </Link>
             </motion.div>
           </div>
-          <div className="absolute top-0">
+          <div className="absolute top-0 md:hidden">
             <Image
               alt="round"
-              src={"/roundedlines.svg"}
-              width={558}
+              src={"/Group 4 (9).svg"}
+              width={600}
               height={558}
             />
           </div>
+          <div className="hidden md:flex absolute top-0">
+            <Image
+              alt="round"
+              src={"/tabletwhiteovals.svg"}
+              width={668}
+              height={558}
+            />
+          </div>
+          
         </section>
 
-        <section className="  relative flex justify-center flex-col items-center text-center  p-6 rounded-xl ">
-          <Image
+        <section className="  relative flex justify-center flex-col items-center text-center  p-6 rounded-xl md:w-[689px]">
+         <div className="md:hidden">
+         <Image
             className="rounded-xl"
             alt="dinamic"
             src={"/tableDinamic.svg"}
             width={327}
             height={320}
           />
+         </div>
+         <div className="hidden md:flex relative w-[689px]">
+         <Image
+            className="rounded-xl"
+            alt="dinamic"
+            src={"/tablet2dinamic.svg"}
+            width={689}
+            height={320}
+          />
+         </div>
           <motion.h1
-            initial={{x:'-20%'}}
+            initial={{ x: "-20%" }}
             whileInView={{
-              x:0
+              x: 0,
             }}
             transition={{
-              duration:1.5
+              duration: 1.5,
             }}
-          className="absolute top-36 left-14 text-[28px] leading-[38.42px] font-bold tracking-[2px]">
+            className="absolute top-36 left-14 text-[28px] leading-[38.42px] font-bold tracking-[2px]"
+          >
             {data[4].name}
           </motion.h1>
           <motion.div
-            initial={{x:'-20%'}}
+            initial={{ x: "-20%" }}
             whileInView={{
-              x:0
+              x: 0,
             }}
             transition={{
-              duration:1.5
+              duration: 1.5,
             }}
-          className="border border-[#000000] absolute left-14 top-56 tracking-[2px]  w-[170px] flex items-center justify-center pt-[15px] pb-[15px] cursor-pointer">
+            className="border border-[#000000] absolute left-14 top-56 tracking-[2px]  w-[170px] flex items-center justify-center pt-[15px] pb-[15px] cursor-pointer"
+          >
             <Link
               href={"/speaker2"}
               className="text-[13px] leading-[17.76px] font-bold tracking-[1px]"
@@ -350,8 +392,8 @@ export default function MainPage() {
             </Link>
           </motion.div>
         </section>
-        <section className="pl-6 pr-6 flex flex-col justify-center items-center">
-          <div>
+        <section className="pl-6 pr-6 flex flex-col justify-center items-center md:flex-row md:gap-3">
+          <div className="md:hidden">
             <Image
               className="rounded-xl"
               alt="buds"
@@ -360,27 +402,38 @@ export default function MainPage() {
               height={200}
             />
           </div>
-          <div className="bg-[#F1F1F1] w-[327px] pt-[41px] pb-[41px] rounded-xl pl-6 pr-14 mt-6">
+          <div className="hidden md:flex relative w-[339px] h-[320px] top-3">
+            <Image
+              className="rounded-xl"
+              alt="buds"
+              src={'/eraphonestabletblack.svg'}
+              width={339}
+              height={320}
+            />
+          </div>
+          <div className="bg-[#F1F1F1] w-[327px] pt-[41px] pb-[41px] rounded-xl pl-6 pr-14 mt-6 md:w-[339px] md:h-[320px] md:flex md:flex-col md:justify-center">
             <motion.h1
-              initial={{x:'25%'}}
+              initial={{ x: "25%" }}
               whileInView={{
-                x:0
+                x: 0,
               }}
               transition={{
-                duration:1.5
+                duration: 1.5,
               }}
-            className="text-[28px] leading-[38.28px] tracking-[2px] font-bold pb-8">
+              className="text-[28px] leading-[38.28px] tracking-[2px] font-bold pb-8"
+            >
               YX1 EARPHONES
             </motion.h1>
             <motion.div
-              initial={{x:'85%'}}
+              initial={{ x: "85%" }}
               whileInView={{
-                x:0
+                x: 0,
               }}
               transition={{
-                duration:1.5
+                duration: 1.5,
               }}
-            className="border border-[#000000]   tracking-[2px]  w-[160px] flex items-center justify-center pt-[15px] pb-[15px] cursor-pointer">
+              className="border border-[#000000]   tracking-[2px]  w-[160px] flex items-center justify-center pt-[15px] pb-[15px] cursor-pointer"
+            >
               <Link
                 href={"/earphone1"}
                 className="text-[13px] leading-[17.76px] font-bold tracking-[1px]"
@@ -391,14 +444,16 @@ export default function MainPage() {
           </div>
         </section>
         <motion.section
-          initial={{y:'20%'}}
+          initial={{ y: "20%" }}
           whileInView={{
-            y:0
+            y: 0,
           }}
           transition={{
-            duration:1.5
+            duration: 1.5,
           }}
-        className="flex justify-center items-center flex-col mt-[120px]">
+          className="flex justify-center items-center flex-col mt-[120px]"
+        >
+          <div className="md:hidden">
           <Image
             className="rounded-xl"
             alt="men"
@@ -406,28 +461,40 @@ export default function MainPage() {
             width={327}
             height={200}
           />
+          </div>
+          <div className="hidden md:flex relative w-[689px] h-[300px] object-fill">
+          <Image
+            className="rounded-xl"
+            alt="men"
+            src={"/tabletmen.svg"}
+            width={689}
+            height={300}
+          />
+          </div>
           <div className="text-center mt-10">
             <motion.h1
-              initial={{y:'50%'}}
+              initial={{ y: "50%" }}
               whileInView={{
-                y:0
+                y: 0,
               }}
               transition={{
-                duration:1.5
+                duration: 1.5,
               }}
-            className="text-[34px] leading-[38.25px] font-bold tracking-[1px] pb-8">
-              Bringing you the <span className="text-[#D87D4A]">best</span>{" "}
-              audio gear
+              className="text-[34px] leading-[38.25px] font-bold tracking-[1px] pb-8 m-auto md:text-[40px] md:leading-[44px] md:w-[573px]"
+            >
+              BRINGING YOU THE <span className="text-[#D87D4A]">BEST</span>{" "}
+              AUDIO GEAR
             </motion.h1>
             <motion.p
-            initial={{y:'30%'}}
-            whileInView={{
-              y:0
-            }}
-            transition={{
-              duration:1.5
-            }}
-            className="text-[15px] leading-[25px] font-normal w-[80%] m-auto opacity-65">
+              initial={{ y: "30%" }}
+              whileInView={{
+                y: 0,
+              }}
+              transition={{
+                duration: 1.5,
+              }}
+              className="text-[15px] leading-[25px] font-normal w-[80%] m-auto opacity-65 md:w-[573px]"
+            >
               Located at the heart of New York City, Audiophile is the premier
               store for high end headphones, earphones, speakers, and audio
               accessories. We have a large showroom and luxury demonstration
