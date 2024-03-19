@@ -128,7 +128,7 @@ export default function producthead2() {
           </div>
         </section>
 
-        <section className="flex flex-col gap-20 mt-24 text-center -z-20">
+        <section className="flex flex-col gap-20 mt-24 text-center">
           <div>
             <h1 className="text-[24px] leading-9 tracking-[0.86px] font-bold">
               YOU MAY ALSO LIKE
@@ -166,9 +166,9 @@ export default function producthead2() {
               {data[1].name}
             </h1>
             <div className="bg-[#D87D4A] w-[160px] pt-[15px] pb-[15px] m-auto mt-8">
-              <h1 className="text-white font-bold tracking-[1px] text-[13px] leading-[17.79px]">
+              <Link href={'/producthead3'} className="text-white font-bold tracking-[1px] text-[13px] leading-[17.79px]">
                 SEE PRODUCT
-              </h1>
+              </Link>
             </div>
           </div>
           <div>
@@ -184,9 +184,9 @@ export default function producthead2() {
               {data[5].name}
             </h1>
             <div className="bg-[#D87D4A] w-[160px] pt-[15px] pb-[15px] m-auto mt-8">
-              <h1 className="text-white font-bold tracking-[1px] text-[13px] leading-[17.79px]">
+              <Link href={'speaker1'} className="text-white font-bold tracking-[1px] text-[13px] leading-[17.79px]">
                 SEE PRODUCT
-              </h1>
+              </Link>
             </div>
           </div>
           <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">

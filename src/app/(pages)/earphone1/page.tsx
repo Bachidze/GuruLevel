@@ -1,13 +1,12 @@
-import React from "react";
+import React from 'react'
 import data from "../../../data.json";
 import Link from "next/link";
 import Image from "next/image";
 import Pay from "@/components/pay/Pay";
-
-export default function producthead() {
+export default function Earphone1() {
   return (
     <>
-      <main className="flex justify-center flex-col items-center">
+     <main className="flex justify-center flex-col items-center">
         <section className="-translate-x-28 mt-4 mb-6">
           <Link className="text-[15px] leading-[25px] opacity-50" href={"/"}>
             GO TO BACK
@@ -18,7 +17,7 @@ export default function producthead() {
             <Image
               className="rounded-xl"
               alt="headphone"
-              src={data[3].categoryImage.mobile}
+              src={data[0].categoryImage.mobile}
               width={327}
               height={353}
             />
@@ -30,13 +29,10 @@ export default function producthead() {
                 NEW PRODUCT
               </h1>
               <h1 className="text-[28px] leading-[38.25px] font-bold tracking-[1px] text-left pb-6 w-[327px] m-auto">
-                {data[3].name}
+                {data[0].name}
               </h1>
               <p className="text-[15px] text-left leading-[25px] font-normal opacity-50  pb-7 w-[327px] -z-10">
-                The new XX99 Mark II headphones is the pinnacle of pristine
-                audio. It redefines your premium headphone experience by
-                reproducing the balanced depth and precision of studio-quality
-                sound.
+                {data[0].description}
               </p>
               <Pay />
             </div>
@@ -48,25 +44,11 @@ export default function producthead() {
             <h1 className="mb-6 text-[24px] leading-9 tracking-[0.86px] font-bold">
               FEATURES
             </h1>
-            <p className="mb-8 text-[15px] leading-[25px] opacity-50">
-              Featuring a genuine leather head strap and premium earcups, these
-              headphones deliver superior comfort for those who like to enjoy
-              endless listening. It includes intuitive controls designed for any
-              situation. Whether yo&apos;re taking a business call or just in
-              your own personal space, the auto on/off and pause features ensure
-              that you&apos;ll never miss a beat.
-            </p>
-            <p className="text-[15px] leading-[25px] opacity-50">
-              The advanced Active Noise Cancellation with built-in equalizer
-              allow you to experience your audio world on your terms. It lets
-              you enjoy your audio in peace, but quickly interact with your
-              surroundings when you need to. Combined with Bluetooth 5. 0
-              compliant connectivity and 17 hour battery life, the XX99 Mark II
-              headphones gives you superior sound, cutting-edge technology, and
-              a modern design aesthetic.
+            <p className=" text-[15px] leading-[25px] opacity-50 tracking-[1.2px]">
+              {data[0].features}
             </p>
           </div>
-          <div className="mt-[88px]">
+          <div className="mt-[60px]">
             <h1 className="mb-6 text-[24px] leading-9 tracking-[0.86px] font-bold">
               in the box
             </h1>
@@ -75,13 +57,13 @@ export default function producthead() {
                 <span className="pr-6 text-[#D87D4A] font-bold text-[15px] leading-[25px] ">
                   1x
                 </span>
-                Headphone Unit
+                Earphone Unit
               </h2>
               <h2 className="text-[#999090]  text-[15px] leading-[25px]">
                 <span className="pr-6 text-[#D87D4A] font-bold text-[15px] leading-[25px]">
-                  2x
+                  6x
                 </span>
-                Replacement Earcups
+                Multi-size Earplugs
               </h2>
               <h2 className="text-[#999090]  text-[15px] leading-[25px]">
                 <span className="pr-6 text-[#D87D4A] font-bold text-[15px] leading-[25px]">
@@ -93,13 +75,13 @@ export default function producthead() {
                 <span className="pr-6 text-[#D87D4A] font-bold text-[15px] leading-[25px]">
                   1x
                 </span>
-                3.5mm 5m Audio Cable
+                USB-C Charging Cable
               </h2>
               <h2 className="text-[#999090]  text-[15px] leading-[25px]">
                 <span className="pr-6 text-[#D87D4A] font-bold text-[15px] leading-[25px]">
                   1x
                 </span>
-                Travel Bag
+                Travel Pouch
               </h2>
             </div>
           </div>
@@ -110,7 +92,7 @@ export default function producthead() {
             <Image
               className="rounded-xl"
               alt="shadow"
-              src={data[3].gallery.first.mobile}
+              src={data[0].gallery.first.mobile}
               width={327}
               height={200}
             />
@@ -119,7 +101,7 @@ export default function producthead() {
             <Image
               className="rounded-xl"
               alt="shadow"
-              src={data[3].gallery.second.mobile}
+              src={data[0].gallery.second.mobile}
               width={327}
               height={200}
             />
@@ -128,7 +110,7 @@ export default function producthead() {
             <Image
               className="rounded-xl"
               alt="shadow"
-              src={data[3].gallery.third.mobile}
+              src={data[0].gallery.third.mobile}
               width={327}
               height={200}
             />
@@ -140,6 +122,27 @@ export default function producthead() {
             <h1 className="text-[24px] leading-9 tracking-[0.86px] font-bold">
               YOU MAY ALSO LIKE
             </h1>
+          </div>
+          <div>
+            <div className="relative flex justify-center bg-[#F1F1F1] pt-[19px] pb-[19px] rounded-xl">
+              <Image
+                alt="image"
+                src={"/dinamic.svg"}
+                width={79}
+                height={104}
+              />
+            </div>
+            <h1 className="mt-8 text-[24px] leading-9 tracking-[0.86px] font-bold">
+              {data[5].name}
+            </h1>
+            <div className="bg-[#D87D4A] w-[160px] pt-[15px] pb-[15px] m-auto mt-8">
+              <Link
+                href={"/speaker1"}
+                className="text-white font-bold tracking-[1px] text-[13px] leading-[17.79px]"
+              >
+                SEE PRODUCT
+              </Link>
+            </div>
           </div>
           <div>
             <div className="relative flex justify-center bg-[#F1F1F1] pt-[19px] pb-[19px] rounded-xl">
@@ -158,12 +161,12 @@ export default function producthead() {
                 href={"/producthead2"}
                 className="text-white font-bold tracking-[1px] text-[13px] leading-[17.79px]"
               >
-                SEE PRODUCT{" "}
+                SEE PRODUCT
               </Link>
             </div>
           </div>
           <div>
-            <div className="relative flex justify-center bg-[#F1F1F1] pt-[19px] pb-[19px] rounded-xl">
+            <div className="relative flex justify-center bg-[#F1F1F1] pt-[17px] pb-[17px] rounded-xl">
               <Image
                 alt="image"
                 src={"/whiteheadphone.svg"}
@@ -177,27 +180,6 @@ export default function producthead() {
             <div className="bg-[#D87D4A] w-[160px] pt-[15px] pb-[15px] m-auto mt-8">
               <Link
                 href={"/producthead3"}
-                className="text-white font-bold tracking-[1px] text-[13px] leading-[17.79px]"
-              >
-                SEE PRODUCT
-              </Link>
-            </div>
-          </div>
-          <div>
-            <div className="relative flex justify-center bg-[#F1F1F1] pt-[17px] pb-[17px] rounded-xl">
-              <Image
-                alt="image"
-                src={"/SpeakerHeader.svg"}
-                width={79}
-                height={104}
-              />
-            </div>
-            <h1 className="mt-8 text-[24px] leading-9 tracking-[0.86px] font-bold">
-              {data[5].name}
-            </h1>
-            <div className="bg-[#D87D4A] w-[160px] pt-[15px] pb-[15px] m-auto mt-8">
-              <Link
-                href={"/speaker1"}
                 className="text-white font-bold tracking-[1px] text-[13px] leading-[17.79px]"
               >
                 SEE PRODUCT
@@ -329,5 +311,5 @@ export default function producthead() {
         </section>
       </main>
     </>
-  );
+  )
 }

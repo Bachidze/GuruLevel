@@ -23,7 +23,7 @@ export default function Speakers() {
           />
         </div>
 
-        <div className="mt-8 -z-10">
+        <div className="mt-8">
           <div className=" flex justify-center flex-col items-center">
             <h1 className="text-[14px] leading-[19px] tracking-[10px] text-center font-normal pb-4 opacity-50 text-[#D87D4A]">
               NEW PRODUCT
@@ -39,7 +39,7 @@ export default function Speakers() {
             </p>
             <div className="bg-[#D87D4A]  tracking-[2px] w-[160px] flex items-center justify-center pt-[15px] pb-[15px] cursor-pointer">
               <Link
-                href={""}
+                href={"/speaker1"}
                 className="text-[13px] leading-[17.76px] font-bold tracking-[1px] text-white"
               >
                 SEE PRODUCT

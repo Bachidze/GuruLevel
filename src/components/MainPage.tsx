@@ -297,7 +297,7 @@ export default function MainPage() {
               }}
             className="bg-[#000000] tracking-[2px]  w-[170px] flex items-center justify-center pt-[15px] pb-[15px] cursor-pointer">
               <Link
-                href={""}
+                href={"/speaker1"}
                 className="text-[13px] leading-[17.76px] font-bold tracking-[1px]"
               >
                 SEE PRODUCT
@@ -343,7 +343,7 @@ export default function MainPage() {
             }}
           className="border border-[#000000] absolute left-14 top-56 tracking-[2px]  w-[170px] flex items-center justify-center pt-[15px] pb-[15px] cursor-pointer">
             <Link
-              href={"/"}
+              href={"/speaker2"}
               className="text-[13px] leading-[17.76px] font-bold tracking-[1px]"
             >
               SEE PRODUCT
@@ -382,7 +382,7 @@ export default function MainPage() {
               }}
             className="border border-[#000000]   tracking-[2px]  w-[160px] flex items-center justify-center pt-[15px] pb-[15px] cursor-pointer">
               <Link
-                href={"/"}
+                href={"/earphone1"}
                 className="text-[13px] leading-[17.76px] font-bold tracking-[1px]"
               >
                 SEE PRODUCT

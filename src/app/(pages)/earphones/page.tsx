@@ -40,7 +40,7 @@ export default function EarPhone() {
               </p>
               <div className="bg-[#D87D4A]  tracking-[2px] w-[160px] flex items-center justify-center pt-[15px] pb-[15px] cursor-pointer">
                 <Link
-                  href={""}
+                  href={"/earphone1"}
                   className="text-[13px] leading-[17.76px] font-bold tracking-[1px] text-white"
                 >
                   SEE PRODUCT
