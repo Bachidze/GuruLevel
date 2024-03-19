@@ -170,7 +170,7 @@ export default function Navbar() {
             </motion.div>
           ) : null}
         </section>
-        {show ?<section className="w-full h-[720vh] bg-[#000000] absolute top-0 z-[99] opacity-30">
+        {show ?<section className="w-full h-[620vh] bg-[#000000] absolute top-0 z-[99] opacity-30">
         </section>:null}
       </header>
     </>
