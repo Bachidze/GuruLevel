@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+ .pirveli{
+        grid-area: pirveli;
+    }
+    
+    .meore{
+        grid-area: meore;
+    }
+    
+    .mesame{
+        grid-area: mesame;
+    }
+    
+    .meotxe{
+        grid-area: meotxe;
+    }
+    
+    .mexute{
+        grid-area: mexute;
+    }
+    
+    .meeqvse{
+        grid-area: meeqvse;
+    }
+
+
+
+@media (width >= 1280px){
+    .maingrid{
+        display: grid;
+        grid-template-areas: "pirveli meore"
+                              "meotxe mesame"
+                              "mexute meeqvse";
+                              row-gap: 160px;
+                              margin-top: 160px;
+                              column-gap: 125px;
+    }
+    .pirveli{
+        grid-area: pirveli;
+    }
+    
+    .meore{
+        grid-area: meore;
+    }
+    
+    .mesame{
+        grid-area: mesame;
+    }
+    
+    .meotxe{
+        grid-area: meotxe;
+    }
+    
+    .mexute{
+        grid-area: mexute;
+    }
+    
+    .meeqvse{
+        grid-area: meeqvse;
+    }
+    
+}
