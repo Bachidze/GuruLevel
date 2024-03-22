@@ -24,9 +24,9 @@ export default function Navbar() {
   console.log(dataJson);
   return (
     <>
-      <header className="bg-[#191919] w-[100%]">
-        <section className=" text-white flex items-center justify-between w-[90%] m-auto pt-8 pb-8 rounded-xl cursor-pointer">
-          <div className="z-[99999]">
+      <header className="bg-[#191919] w-[100%] max-w-[1920px] m-auto">
+        <section className=" text-white flex items-center justify-between w-[90%] m-auto pt-8 pb-8 rounded-xl cursor-pointer xl:w-[76%]">
+          <div className="z-[99999] xl:hidden">
             <Image
               onClick={handleShow}
               alt="brgr"
@@ -45,16 +45,22 @@ export default function Navbar() {
               />
             </Link>
           </div>
+          <div className="hidden xl:flex text-[13px] leading-[25px] tracking-[2px] gap-10 z-[9999]">
+            <Link href={'/'}>HOME</Link>
+            <Link href={'/headphones'}>HEADPHONES</Link>
+            <Link href={'/speakers'}>SPEAKERS</Link>
+            <Link href={'/earphones'}>EARPHONES</Link>
+          </div>
           <div onClick={handleShop} className="z-[99999]">
             <Image alt="product" src={AddProductIcon} width={22} height={6} />
           </div>
         </section>
-       {shop ? <section className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[999]">
+       {shop ? <section className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[999] xl:hidden">
           <div className="w-[327px] min-h-[448px] bg-white flex justify-center items-center rounded-xl"></div>
         </section>:null}
         {shop ?<section className="w-full h-[620vh] bg-[#000000] absolute top-0 z-[99] opacity-30">
         </section>:null}
-        <section className="flex bg-white   justify-center items-center  m-auto z-50">
+        <section className="flex bg-white  justify-center items-center  m-auto z-50 xl:hidden">
           {show ? (
             <motion.div
               animate={{
@@ -67,9 +73,9 @@ export default function Navbar() {
               }}
               initial={{ opacity: 0, y: "-200%" }}
               whileInView={{ opacity: 1 }}
-              className="flex flex-col justify-center items-center absolute bottom-20 text-white pt-20 bg-white gap-24 text-center rounded-xl pb-7 w-full z-[99999]"
+              className="flex flex-col justify-center items-center absolute  text-white pt-20 bg-white gap-24 text-center rounded-xl pb-7 w-full z-[99999] md:flex-row md:-top-72 md:gap-8 md:pl-8 md:pr-8 md:pb-[67px] md:pt-[100px]"
             >
-              <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
+              <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl md:w-[223px] md:h-[165px]">
                 <div className="relative flex justify-center bottom-14">
                   <Image
                     alt="imgage"
@@ -102,7 +108,7 @@ export default function Navbar() {
                 </div>
               </div>
 
-              <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
+              <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl md:w-[223px] md:h-[165px]">
                 <div className="relative flex justify-center bottom-14">
                   <Image
                     alt="imgage"
@@ -135,7 +141,7 @@ export default function Navbar() {
                 </div>
               </div>
 
-              <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl">
+              <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl md:w-[223px] md:h-[165px]">
                 <div className="relative flex justify-center bottom-12">
                   <Image
                     alt="image"
