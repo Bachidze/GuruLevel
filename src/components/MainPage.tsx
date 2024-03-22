@@ -95,7 +95,7 @@ export default function MainPage() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col gap-20 mt-24 text-center md:flex-row  md:gap-4 md:w-[689px] xl:w-[1110px] xl:gap-6">
+        <section className="flex flex-col gap-20 mt-24 text-center md:flex-row  md:gap-4 md:w-[689px] xl:w-[1090px] xl:gap-6">
           <div className="relative w-[327px] h-[165px] bg-[#F1F1F1] flex  flex-col justify-between pb-[22px] rounded-xl md:w-[223px] md:h-[165px] xl:w-[350px] xl:h-[204px]">
             <motion.div
               initial={{ y: "100%" }}

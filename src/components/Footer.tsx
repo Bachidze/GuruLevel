@@ -9,7 +9,7 @@ export default function Footer() {
     <>
       <footer className="bg-[#101010] pt-[52px] pb-[38px] mt-[120px]">
         <section className="text-white flex flex-col justify-center items-center text-center gap-[48px] md:self-start md:items-start md:w-[85%] md:m-auto md:text-left  max-w-[1920px] m-auto">
-          <div className="flex justify-between">
+          <div className="xl:flex justify-between">
             <div>
               <motion.div
                 initial={{ y: "150%" }}
