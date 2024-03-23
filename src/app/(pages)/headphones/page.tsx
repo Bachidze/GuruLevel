@@ -131,7 +131,7 @@ export default function headphone() {
             </div>
             <div className="flex justify-center relative bottom-4 gap-2 text-[#000000] xl:bottom-6">
               <Link
-                href={"/headphones"}
+                href={"/producthead2"}
                 className="opacity-50 text-[13px] tracking-widest font-bold leading-[17px]"
               >
                 SHOP
@@ -153,9 +153,9 @@ export default function headphone() {
                 SPEAKERS
               </Link>
             </div>
-            <div className="flex justify-center relative bottom-4 gap-2 text-[#000000]">
+            <div className="flex justify-center relative bottom-4 gap-2 text-[#000000] xl:bottom-3">
               <Link
-                href={"/headphones"}
+                href={"/speaker1"}
                 className="opacity-50 text-[13px] tracking-widest font-bold leading-[17px]"
               >
                 SHOP
@@ -179,7 +179,7 @@ export default function headphone() {
             </div>
             <div className="flex justify-center relative bottom-4 gap-2 text-[#000000] xl:bottom-1">
               <Link
-                href={"/headphones"}
+                href={"/earphone1"}
                 className="opacity-50 text-[13px] tracking-widest font-bold leading-[17px]"
               >
                 SHOP
