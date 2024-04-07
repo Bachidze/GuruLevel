@@ -83,7 +83,7 @@ export default function Navbar() {
                 className="w-[327px] min-h-[448px] bg-white flex justify-center items-center rounded-xl"
               >
                 {cart?.map(el => (
-                  <div>
+                  <div key={el.id}>
                     <h4>{el.name}</h4>
                     <h4>{el.price}</h4>
                     <button onClick={() => deleteId(el.id)}>Delete</button>
