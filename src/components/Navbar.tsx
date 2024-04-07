@@ -1,9 +1,16 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import data from "../data.json";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import { Globalcontext } from "@/app/Context";
+ interface CartItem {
+  id: number;
+  name: string;
+  price: number;
+
+}
 
 export default function Navbar() {
   const [show, setShow] = useState(false);
@@ -16,6 +23,15 @@ export default function Navbar() {
     setshop(!shop);
     setShow(false);
   };
+  const context = useContext(Globalcontext)
+
+  if(!context) return null
+
+  const {cart, setCart} = context
+  const deleteId = (id:number) => {
+    const cleared = cart.filter((el:CartItem) => el.id !== id)
+    setCart(cleared)
+  }
 
   const BurgeMenu = "/Burger_Menu.svg";
   const X = "/Burger_Menu_X (1).svg";
@@ -65,7 +81,15 @@ export default function Navbar() {
                exit={{ opacity: 0, y: "-100%" }}
                transition={{ type: "tween", duration: 0.2 }}
                 className="w-[327px] min-h-[448px] bg-white flex justify-center items-center rounded-xl"
-              ></motion.div>
+              >
+                {cart?.map(el => (
+                  <div>
+                    <h4>{el.name}</h4>
+                    <h4>{el.price}</h4>
+                    <button onClick={() => deleteId(el.id)}>Delete</button>
+                  </div>
+                ))}
+              </motion.div>
             </motion.section>
           ) : null}
         </AnimatePresence>

@@ -2,9 +2,11 @@ import React from "react";
 import data from "../../../data.json";
 import Link from "next/link";
 import Image from "next/image";
+import Tranistion from "@/components/transitionEffect/Tranistion";
 export default function EarPhone() {
   return (
     <>
+    <Tranistion />
       <main className="flex justify-center flex-col items-center">
         <section className="bg-[#000000] w-full">
           <div className="flex justify-center pt-8 pb-8">

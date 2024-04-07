@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import data from "../../../data.json";
 import Link from "next/link";
@@ -5,6 +6,13 @@ import Image from "next/image";
 import Pay from "@/components/pay/Pay";
 
 export default function speaker1() {
+
+  const cartObj = {
+    name: data[5].name,
+    id: data[5].id,
+    price: Number(data[5].price)
+  }
+
   return (
     <>
       <main className="flex justify-center flex-col items-center">
@@ -35,7 +43,9 @@ export default function speaker1() {
               <p className="text-[15px] text-left leading-[25px] font-normal opacity-50  pb-7 w-[327px] -z-10">
                 {data[5].description}
               </p>
-              <Pay />
+              <Pay 
+              cartObj={cartObj}
+              />
             </div>
           </div>
         </section>

@@ -1,9 +1,18 @@
+'use client'
 import React from 'react'
 import data from "../../../data.json";
 import Link from "next/link";
 import Image from "next/image";
 import Pay from "@/components/pay/Pay";
 export default function Earphone1() {
+
+  
+  const cartObj = {
+    name: data[0].name,
+    id: data[0].id,
+    price: Number(data[0].price)
+  }
+
   return (
     <>
      <main className="flex justify-center flex-col items-center">
@@ -34,7 +43,9 @@ export default function Earphone1() {
               <p className="text-[15px] text-left leading-[25px] font-normal opacity-50  pb-7 w-[327px] -z-10">
                 {data[0].description}
               </p>
-              <Pay />
+              <Pay 
+              cartObj={cartObj} 
+              />
             </div>
           </div>
         </section>

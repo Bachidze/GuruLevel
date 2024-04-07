@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import data from "../../../data.json";
 import Link from "next/link";
@@ -5,6 +6,11 @@ import Image from "next/image";
 import Pay from "@/components/pay/Pay";
 
 export default function producthead2() {
+  const cartObj = {
+    name: data[2].name,
+    id: data[2].id,
+    price: Number(data[2].price)
+  }
   return (
     <>
       <main className="flex justify-center flex-col items-center">
@@ -38,7 +44,7 @@ export default function producthead2() {
                 mixing engineers, and music aficionados alike in studios and on
                 the go.
               </p>
-              <Pay />
+              <Pay cartObj={cartObj} />
             </div>
           </div>
         </section>

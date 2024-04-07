@@ -4,10 +4,12 @@ import data from "../data.json";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Tranistion from "./transitionEffect/Tranistion";
 
 export default function MainPage() {
   return (
     <>
+    <Tranistion />
       <main className="flex justify-center flex-col items-center uppercase">
         <section className="relative">
           <div className=" text-white">

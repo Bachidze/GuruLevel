@@ -3,6 +3,8 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import GlobalcontextProvider from "./Context";
+import Tranistion from "@/components/transitionEffect/Tranistion";
 
 const inter = Manrope({ subsets: ["latin"] });
 
@@ -19,9 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <GlobalcontextProvider>
         <Navbar />
+        <Tranistion />
         {children}
         <Footer/>
+        </GlobalcontextProvider>
         </body>
     </html>
   );

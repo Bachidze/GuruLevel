@@ -4,6 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 import Pay from "@/components/pay/Pay";
 export default function Speaker2() {
+
+  const cartObj = {
+    name: data[4].name,
+    id: data[4].id,
+    price: Number(data[4].price)
+  }
+
   return (
     <>
     <main className="flex justify-center flex-col items-center">
@@ -34,7 +41,9 @@ export default function Speaker2() {
               <p className="text-[15px] text-left leading-[25px] font-normal opacity-50  pb-7 w-[327px] -z-10">
                 {data[4].description}
               </p>
-              <Pay />
+              <Pay
+              cartObj={cartObj}
+              />
             </div>
           </div>
         </section>

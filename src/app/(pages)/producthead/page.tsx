@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import data from "../../../data.json";
 import Link from "next/link";
@@ -5,6 +6,17 @@ import Image from "next/image";
 import Pay from "@/components/pay/Pay";
 
 export default function producthead() {
+
+  // console.log(data[3], "data")
+
+  const cartObj = {
+    name: data[3].name,
+    id: data[3].id,
+    price: Number(data[3].price)
+  }
+
+  // console.log(cartObj)
+
   return (
     <>
       <main className="flex justify-center flex-col items-center">
@@ -38,7 +50,9 @@ export default function producthead() {
                 reproducing the balanced depth and precision of studio-quality
                 sound.
               </p>
-              <Pay />
+              <Pay 
+                cartObj={cartObj}
+              />
             </div>
           </div>
         </section>
