@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useContext } from 'react'
 import data from "../../../data.json";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,10 +8,13 @@ export default function Earphone1() {
 
   
   const cartObj = {
-    name: data[0].name,
+    name: 'YX 1',
     id: data[0].id,
-    price: Number(data[0].price)
+    price: Number(data[0].price),
+    image:data[0].categoryImage.mobile
   }
+
+
 
   return (
     <>

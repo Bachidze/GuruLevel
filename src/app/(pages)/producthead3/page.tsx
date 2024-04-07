@@ -8,9 +8,10 @@ import Pay from "@/components/pay/Pay";
 export default function producthead3() {
 
   const cartObj = {
-    name: data[1].name,
+    name: data[3].others[1].name,
     id: data[1].id,
-    price: Number(data[1].price)
+    price: Number(data[1].price),
+    image:data[1].categoryImage.mobile
   }
 
   return (

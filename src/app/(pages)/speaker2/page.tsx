@@ -6,9 +6,10 @@ import Pay from "@/components/pay/Pay";
 export default function Speaker2() {
 
   const cartObj = {
-    name: data[4].name,
+    name: data[5].others[0].name,
     id: data[4].id,
-    price: Number(data[4].price)
+    price: Number(data[4].price),
+    image:data[4].categoryImage.mobile
   }
 
   return (

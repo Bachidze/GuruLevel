@@ -8,9 +8,10 @@ import Pay from "@/components/pay/Pay";
 export default function speaker1() {
 
   const cartObj = {
-    name: data[5].name,
+    name: data[4].others[0].name,
     id: data[5].id,
-    price: Number(data[5].price)
+    price: Number(data[5].price),
+    image:data[5].categoryImage.mobile
   }
 
   return (

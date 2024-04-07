@@ -7,15 +7,14 @@ import Pay from "@/components/pay/Pay";
 
 export default function producthead() {
 
-  // console.log(data[3], "data")
 
   const cartObj = {
-    name: data[3].name,
+    name: data[2].others[0].name,
     id: data[3].id,
-    price: Number(data[3].price)
+    price: Number(data[3].price),
+    image:data[3].categoryImage.mobile
   }
 
-  // console.log(cartObj)
 
   return (
     <>

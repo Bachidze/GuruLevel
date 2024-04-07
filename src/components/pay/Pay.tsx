@@ -20,7 +20,7 @@ export default function Pay({ cartObj }: any) {
 
   if (!context) return null;
 
-  const { giorgi, setGiorgi,chasetva,setChasetva, setCart, cart } = context;
+  const {  setCart, cart } = context;
 
   const price = pay * multiplier;
   const addToCart = (item:any) => {
@@ -55,10 +55,10 @@ export default function Pay({ cartObj }: any) {
     theme: "light",
     transition: Bounce,
     });
+
+    
   return (
     <>
-      <h1>Count:{giorgi}</h1>
-      <button onClick={() => setGiorgi(giorgi + 1)}>increase</button>
       <main className="flex flex-col m-auto w-[327px]">
         <div className="mb-[31px]">
           <h1 className="text-[18px] leading-[24.59px] tracking-[1.29px] font-bold">
